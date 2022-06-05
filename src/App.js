@@ -102,7 +102,7 @@ const AppName = styled.div`
   align-items: center;
 `;
 const Header = styled.div`
-  background-color: black;
+  background-color: coral;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -130,12 +130,6 @@ const RecipeImage = styled.img`
   width: 36px;
   height: 36px;
   margin: 15px;
-`;
-const Placeholder = styled.img`
-  width: 120px;
-  height: 120px;
-  margin: 200px;
-  opacity: 50%;
 `;
 const SearchInput = styled.input`
   color: black;
@@ -193,7 +187,10 @@ const AppComponent = () => {
             <RecipeComponent key={index} recipe={recipe.recipe} />
           ))
         ) : (
-          <Placeholder src="/react-recipe-finder/hamburger.svg" />
+          <>
+          <p style={{color:'white'}}>Please search to find your appropriate recipie</p>
+          <img src="https://i.pinimg.com/originals/71/6b/27/716b27256c6099e4e2724939ff5e77f9.png" alt="heyy" />
+          </>
         )}
       </RecipeListContainer>
     </Container>
